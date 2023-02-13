@@ -7,7 +7,7 @@
         state: stopped
         wait: True
         instance_ids:
-          - i-0409971597131449e
+          - "{{ id }}"
         region: eu-west-1
       register: result
       
