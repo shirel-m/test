@@ -3,7 +3,7 @@
   connection: local
   tasks:
     - name: stop ec2 instance by its ID
-      ec2:
+      amazon.aws.ec2_instance:
         state: stopped
         wait: True
         instance_ids:
