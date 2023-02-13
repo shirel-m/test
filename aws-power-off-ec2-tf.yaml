@@ -1,0 +1,12 @@
+- name: Stop Aws EC2
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: stop ec2 instance by its ID
+      ec2:
+        state: stopped
+        wait: True
+        instance_ids:
+          - i-0409971597131449e
+        region: eu-west-1
+
