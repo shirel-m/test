@@ -9,4 +9,8 @@
         instance_ids:
           - i-0409971597131449e
         region: eu-west-1
-
+      register: result
+      
+    - copy:
+        content: "{{ result }}"
+        dest: "qtorque_outputs.json"
