@@ -1,0 +1,16 @@
+- name: Start Aws EC2
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: start ec2 instance by its ID
+      amazon.aws.ec2_instance:
+        state: running
+        wait: True
+        instance_ids:
+          - "{{ id }}"
+        region: "{{ (arn | split(':'))[3] }}"
+      register: result
+      
+    - copy:
+        content: "{{ result }}"
+        dest: "qtorque_outputs.json"
