@@ -4,6 +4,7 @@ description: manual blueprint for terraform module hello_world
 
 workflow:
   scope: env
+  labels-selector: hello
   triggers:
   - type: manual
   - type: cron
