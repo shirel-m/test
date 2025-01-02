@@ -5,6 +5,8 @@ environment:
   environment_name: env-labels-eac
   owner_email: shirel.m@quali.com
   state: active
+  labels:
+    key: value
     
 inputs:
   agent:
