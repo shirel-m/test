@@ -7,7 +7,6 @@ environment:
   state: active
   labels:
     key1: value1
-    Key2: value2
     
 inputs:
   agent:
