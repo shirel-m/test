@@ -4,7 +4,7 @@ description: hello world
 environment:
   environment_name: env-labels-eac
   owner_email: shirel.m@quali.com
-  state: inactive
+  state: active
     
 inputs:
   agent:
