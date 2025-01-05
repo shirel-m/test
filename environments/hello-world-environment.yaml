@@ -6,7 +6,7 @@ environment:
   owner_email: shirel.m@quali.com
   state: active
   labels:
-    - key: value
+    key: value
     
 inputs:
   agent:
