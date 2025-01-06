@@ -2,7 +2,7 @@ spec_version: 2
 description: hello world
  
 environment:
-  environment_name: env-labels-eac
+  environment_name: my_eac
   owner_email: shirel.m@quali.com
   state: active
   labels:
