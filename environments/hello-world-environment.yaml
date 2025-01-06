@@ -45,7 +45,7 @@ grains:
       agent:
         name: '{{ .inputs.agent }}'
       inputs: 
-      - vido: 'viddd'
+      - vido: 'shirel'
       env-vars: []
       outputs:
       - hello_world
