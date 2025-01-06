@@ -13,6 +13,12 @@ inputs:
   agent:
     type: agent
     default: eks
+  input1:
+    type: string
+    default: input1
+  input2:
+    type: string
+    default: input2
  
 outputs:
   output:
@@ -45,8 +51,10 @@ grains:
       agent:
         name: '{{ .inputs.agent }}'
       inputs:
-        - test_input2: "input2"
+        - test_input1: '{{ .inputs.input1 }}'
+        - test_input2: '{{ .inputs.input2 }}'
       env-vars: []
       outputs:
+        - output1
         - output2
     tf-version: 1.5.3
