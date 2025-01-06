@@ -15,11 +15,11 @@ inputs:
     default: eks
  
 outputs:
-  hello-world:
-    value: '{{ .grains.hello-world.outputs.hello_world }}'
+  output:
+    value: '{{ .grains.simple-tf.outputs.output2 }}'
   
 grains:
-  hello-world:
+  simple-tf:
     kind: terraform
     spec:
       # provider-overrides:
@@ -41,12 +41,12 @@ grains:
       #         role_arn: arn:aws:iam::046086677675:role/some-other-role
       source:
         store: test-spec2-public
-        path: terraform/hello-world
+        path: terraform/simple-tf-module
       agent:
         name: '{{ .inputs.agent }}'
-      inputs: 
-      - vido: 'shirel'
+      inputs:
+        - test_input2: "input2"
       env-vars: []
       outputs:
-      - hello_world
-    tf-version: 1.5.5
+        - output2
+    tf-version: 1.5.3
