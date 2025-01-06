@@ -21,7 +21,9 @@ inputs:
     default: input2
  
 outputs:
-  output:
+  output1:
+    value: '{{ .grains.simple-tf.outputs.output1 }}'
+  output2:
     value: '{{ .grains.simple-tf.outputs.output2 }}'
   
 grains:
