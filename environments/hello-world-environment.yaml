@@ -27,7 +27,7 @@ outputs:
     value: '{{ .grains.simple-tf.outputs.output2 }}'
   
 grains:
-  simple-tf:
+  simple-tf!:
     kind: terraform
     spec:
       # provider-overrides:
