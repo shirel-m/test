@@ -52,6 +52,7 @@ grains:
         path: terraform/simple-tf-module
       agent:
         name: '{{ .inputs.agent }}'
+        use-storage: false
       inputs:
         - test_input1: '{{ .inputs.input1 }}'
         - test_input2: '{{ .inputs.input2 }}'
