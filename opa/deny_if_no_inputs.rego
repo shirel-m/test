@@ -8,6 +8,6 @@ bp_inputs := input.inputs
 //     bp_inputs == ""
 // }
 
-result = {"decision": "Manual", "reason": ""} if {
+result = {"decision": "Manual", "reason": "Should be manually resolved"} if {
     bp_inputs == ""
 }
